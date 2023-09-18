@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Задача 9</title>
+    <input id="click-to-hide" type="button" value="Нажими сюда!">
+    <div id="hidden-element">При нажатии на кнопку я пропаду</div>
+    <script>
+      document.addEventListener("DOMContentLoaded", hiddenCloseclick());
+      document.getElementById('click-to-hide').addEventListener("click", hiddenCloseclick);
+        function hiddenCloseclick() {
+        let x = document.getElementById('hidden-element');
+          if (x.style.display == "none"){
+          x.style.display = "block";
+          } else {
+         x.style.display = "none"}
+        };
+      </script>
+</body>
+</html>

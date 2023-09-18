@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Задача 5</title>
+</head>
+
+<body>
+    <input type="button" value="Нажми меня!"> <br><br>
+    <input type="button" value="Нажми меня тоже!"> <br><br>
+    <script>
+         let elements = document.getElementsByTagName("button");
+        for(btn of buttons){
+            btn.onclick = function(){
+                alert('Кнопка нажата!');
+            }
+        }
+    </script>
+</body>
+
+</html>
